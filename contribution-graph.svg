@@ -1,0 +1,157 @@
+<svg width="100%" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes fillCell {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      @keyframes glow {
+        0%, 100% { filter: drop-shadow(0 0 0px rgba(0,255,0,0)); }
+        50% { filter: drop-shadow(0 0 4px rgba(0,255,0,0.3)); }
+      }
+      .contrib-cell {
+        animation: fillCell 0.5s ease-out forwards;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .contrib-cell:hover { 
+        filter: brightness(1.3);
+        r: 3;
+      }
+      .month-label { 
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        fill: #24292e;
+      }
+      .day-label {
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        fill: #6a737d;
+      }
+      .title {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        fill: #24292e;
+      }
+      .subtitle {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        fill: #6a737d;
+      }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="20" y="28" class="title">Contribution History</text>
+  <text x="20" y="48" class="subtitle">📈 Active contributions over the last year</text>
+
+  <!-- Legend -->
+  <g>
+    <text x="20" y="70" class="subtitle">Less</text>
+    <rect x="65" y="60" width="14" height="14" rx="2" fill="#ebedf0"/>
+    <rect x="83" y="60" width="14" height="14" rx="2" fill="#c6e48b"/>
+    <rect x="101" y="60" width="14" height="14" rx="2" fill="#7bc96f"/>
+    <rect x="119" y="60" width="14" height="14" rx="2" fill="#239a3b"/>
+    <rect x="137" y="60" width="14" height="14" rx="2" fill="#196127"/>
+    <text x="160" y="70" class="subtitle">More</text>
+  </g>
+
+  <!-- Day labels -->
+  <text x="5" y="115" class="day-label">Mon</text>
+  <text x="5" y="175" class="day-label">Wed</text>
+  <text x="5" y="235" class="day-label">Fri</text>
+
+  <!-- Month labels -->
+  <text x="35" y="95" class="month-label">Jan</text>
+  <text x="120" y="95" class="month-label">Feb</text>
+  <text x="205" y="95" class="month-label">Mar</text>
+  <text x="290" y="95" class="month-label">Apr</text>
+  <text x="375" y="95" class="month-label">May</text>
+  <text x="460" y="95" class="month-label">Jun</text>
+  <text x="545" y="95" class="month-label">Jul</text>
+  <text x="630" y="95" class="month-label">Aug</text>
+  <text x="715" y="95" class="month-label">Sep</text>
+  <text x="800" y="95" class="month-label">Oct</text>
+
+  <!-- JANUARY -->
+  <rect class="contrib-cell" x="20" y="110" width="13" height="13" rx="2" fill="#ebedf0" style="animation-delay: 0.0s"/>
+  <rect class="contrib-cell" x="20" y="128" width="13" height="13" rx="2" fill="#c6e48b" style="animation-delay: 0.08s"/>
+  <rect class="contrib-cell" x="20" y="146" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 0.16s"/>
+  <rect class="contrib-cell" x="20" y="164" width="13" height="13" rx="2" fill="#239a3b" style="animation-delay: 0.24s"/>
+  <rect class="contrib-cell" x="20" y="182" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 0.32s"/>
+  <rect class="contrib-cell" x="20" y="200" width="13" height="13" rx="2" fill="#c6e48b" style="animation-delay: 0.4s"/>
+  <rect class="contrib-cell" x="20" y="218" width="13" height="13" rx="2" fill="#196127" style="animation-delay: 0.48s"/>
+
+  <rect class="contrib-cell" x="38" y="110" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 0.56s"/>
+  <rect class="contrib-cell" x="38" y="128" width="13" height="13" rx="2" fill="#239a3b" style="animation-delay: 0.64s"/>
+  <rect class="contrib-cell" x="38" y="146" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 0.72s"/>
+  <rect class="contrib-cell" x="38" y="164" width="13" height="13" rx="2" fill="#c6e48b" style="animation-delay: 0.8s"/>
+  <rect class="contrib-cell" x="38" y="182" width="13" height="13" rx="2" fill="#ebedf0" style="animation-delay: 0.88s"/>
+  <rect class="contrib-cell" x="38" y="200" width="13" height="13" rx="2" fill="#c6e48b" style="animation-delay: 0.96s"/>
+  <rect class="contrib-cell" x="38" y="218" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 1.04s"/>
+
+  <rect class="contrib-cell" x="56" y="110" width="13" height="13" rx="2" fill="#196127" style="animation-delay: 1.12s"/>
+  <rect class="contrib-cell" x="56" y="128" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 1.2s"/>
+  <rect class="contrib-cell" x="56" y="146" width="13" height="13" rx="2" fill="#c6e48b" style="animation-delay: 1.28s"/>
+  <rect class="contrib-cell" x="56" y="164" width="13" height="13" rx="2" fill="#ebedf0" style="animation-delay: 1.36s"/>
+  <rect class="contrib-cell" x="56" y="182" width="13" height="13" rx="2" fill="#239a3b" style="animation-delay: 1.44s"/>
+  <rect class="contrib-cell" x="56" y="200" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 1.52s"/>
+  <rect class="contrib-cell" x="56" y="218" width="13" height="13" rx="2" fill="#196127" style="animation-delay: 1.6s"/>
+
+  <rect class="contrib-cell" x="74" y="110" width="13" height="13" rx="2" fill="#c6e48b" style="animation-delay: 1.68s"/>
+  <rect class="contrib-cell" x="74" y="128" width="13" height="13" rx="2" fill="#ebedf0" style="animation-delay: 1.76s"/>
+  <rect class="contrib-cell" x="74" y="146" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 1.84s"/>
+  <rect class="contrib-cell" x="74" y="164" width="13" height="13" rx="2" fill="#239a3b" style="animation-delay: 1.92s"/>
+  <rect class="contrib-cell" x="74" y="182" width="13" height="13" rx="2" fill="#196127" style="animation-delay: 2.0s"/>
+  <rect class="contrib-cell" x="74" y="200" width="13" height="13" rx="2" fill="#239a3b" style="animation-delay: 2.08s"/>
+  <rect class="contrib-cell" x="74" y="218" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 2.16s"/>
+
+  <!-- FEBRUARY -->
+  <rect class="contrib-cell" x="105" y="110" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 2.24s"/>
+  <rect class="contrib-cell" x="105" y="128" width="13" height="13" rx="2" fill="#239a3b" style="animation-delay: 2.32s"/>
+  <rect class="contrib-cell" x="105" y="146" width="13" height="13" rx="2" fill="#196127" style="animation-delay: 2.4s"/>
+  <rect class="contrib-cell" x="105" y="164" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 2.48s"/>
+  <rect class="contrib-cell" x="105" y="182" width="13" height="13" rx="2" fill="#c6e48b" style="animation-delay: 2.56s"/>
+  <rect class="contrib-cell" x="105" y="200" width="13" height="13" rx="2" fill="#ebedf0" style="animation-delay: 2.64s"/>
+  <rect class="contrib-cell" x="105" y="218" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 2.72s"/>
+
+  <rect class="contrib-cell" x="123" y="110" width="13" height="13" rx="2" fill="#239a3b" style="animation-delay: 2.8s"/>
+  <rect class="contrib-cell" x="123" y="128" width="13" height="13" rx="2" fill="#c6e48b" style="animation-delay: 2.88s"/>
+  <rect class="contrib-cell" x="123" y="146" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 2.96s"/>
+  <rect class="contrib-cell" x="123" y="164" width="13" height="13" rx="2" fill="#196127" style="animation-delay: 3.04s"/>
+  <rect class="contrib-cell" x="123" y="182" width="13" height="13" rx="2" fill="#ebedf0" style="animation-delay: 3.12s"/>
+  <rect class="contrib-cell" x="123" y="200" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 3.2s"/>
+  <rect class="contrib-cell" x="123" y="218" width="13" height="13" rx="2" fill="#239a3b" style="animation-delay: 3.28s"/>
+
+  <rect class="contrib-cell" x="141" y="110" width="13" height="13" rx="2" fill="#196127" style="animation-delay: 3.36s"/>
+  <rect class="contrib-cell" x="141" y="128" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 3.44s"/>
+  <rect class="contrib-cell" x="141" y="146" width="13" height="13" rx="2" fill="#c6e48b" style="animation-delay: 3.52s"/>
+  <rect class="contrib-cell" x="141" y="164" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 3.6s"/>
+  <rect class="contrib-cell" x="141" y="182" width="13" height="13" rx="2" fill="#239a3b" style="animation-delay: 3.68s"/>
+  <rect class="contrib-cell" x="141" y="200" width="13" height="13" rx="2" fill="#196127" style="animation-delay: 3.76s"/>
+  <rect class="contrib-cell" x="141" y="218" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 3.84s"/>
+
+  <rect class="contrib-cell" x="159" y="110" width="13" height="13" rx="2" fill="#c6e48b" style="animation-delay: 3.92s"/>
+  <rect class="contrib-cell" x="159" y="128" width="13" height="13" rx="2" fill="#239a3b" style="animation-delay: 4.0s"/>
+  <rect class="contrib-cell" x="159" y="146" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 4.08s"/>
+  <rect class="contrib-cell" x="159" y="164" width="13" height="13" rx="2" fill="#ebedf0" style="animation-delay: 4.16s"/>
+  <rect class="contrib-cell" x="159" y="182" width="13" height="13" rx="2" fill="#196127" style="animation-delay: 4.24s"/>
+  <rect class="contrib-cell" x="159" y="200" width="13" height="13" rx="2" fill="#c6e48b" style="animation-delay: 4.32s"/>
+  <rect class="contrib-cell" x="159" y="218" width="13" height="13" rx="2" fill="#239a3b" style="animation-delay: 4.4s"/>
+
+  <!-- MARCH onwards (similar pattern) -->
+  <!-- MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT -->
+  <rect class="contrib-cell" x="190" y="110" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 4.48s"/>
+  <rect class="contrib-cell" x="190" y="128" width="13" height="13" rx="2" fill="#196127" style="animation-delay: 4.56s"/>
+  <rect class="contrib-cell" x="190" y="146" width="13" height="13" rx="2" fill="#239a3b" style="animation-delay: 4.64s"/>
+  <rect class="contrib-cell" x="190" y="164" width="13" height="13" rx="2" fill="#c6e48b" style="animation-delay: 4.72s"/>
+  <rect class="contrib-cell" x="190" y="182" width="13" height="13" rx="2" fill="#7bc96f" style="animation-delay: 4.8s"/>
+  <rect class="contrib-cell" x="190" y="200" width="13" height="13" rx="2" fill="#ebedf0" style="animation-delay: 4.88s"/>
+  <rect class="contrib-cell" x="190" y="218" width="13" height="13" rx="2" fill="#196127" style="animation-delay: 4.96s"/>
+
+  <!-- Bottom info -->
+  <circle cx="20" cy="265" r="4" fill="#7bc96f"/>
+  <text x="32" y="269" class="subtitle">🔥 Active Contributor | Passionate about open source & coding</text>
+</svg>
